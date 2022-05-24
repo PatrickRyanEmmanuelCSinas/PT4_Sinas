@@ -1,0 +1,133 @@
+<html>
+<head> 
+	<style>
+
+*{
+	margin: 0px; 
+	padding: 0px; 
+	box-sizing: border-box;
+	background: black;
+}
+.nav ul{ 
+	list-style-type: none;
+}	
+.nav ul li{
+float:left;
+width:100px; 
+text-align:center; 
+margin-left:5px;
+}
+.nav ul li ul li{
+ margin-left: 0px;
+}
+.nav ul ul{ 
+display:none;
+}
+.nav ul li:hover > ul{
+display:block;
+}
+.nav ul li:hover{
+ background: blue;
+ color: blue; 
+ font-weight:bold;
+}
+.nav ul li ul li:hover{
+ background: blue; 
+ color: blue;
+ border-radius: 5px;
+}
+.container {
+  display: grid;
+  height: 300px;
+  grid-template-columns: 0.5fr 1fr 0.5fr;
+  grid-template-rows: 0.4fr 1fr 0.4fr;
+  grid-template-areas:  
+  "Header Header Header"
+  "S1 Main S2"
+  "Footer Footer Footer"
+
+}
+
+.header {
+  border-radius: 50px;
+    Background-color: black;
+    grid-area: Header;
+	align: center;
+}
+
+.content-1 {
+  border-radius: 50px;
+    Background-color: black;
+    grid-area: S1;
+}
+
+.content-2 {
+  border-radius: 50px;
+    background-color: black;
+    grid-area: Main;
+}
+
+.content-3 {
+  border-radius: 50px;
+    background-color: black;
+    grid-area: S2;
+}
+
+.footer {
+  border-radius: 50px;
+    background-color: black;
+    grid-area: Footer;
+}
+
+@media screen and (max-width: 600px) {
+
+.container {
+  display: grid; 
+  grid-template-columns: 2.2fr; 
+  grid-template-rows: 0.4fr 0.7fr 1fr 0.7fr 0.4fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "Header"
+    "S1"
+    "Main"
+    "S2"
+    "Footer"; 
+}
+
+</style>
+
+<title>PT4_SINAS</title>
+  </head>
+   <body> 
+<font color=blue face=arial>
+   <div class="container">
+<div align="center" class="header">
+  <div class=nav>
+<ul>
+           <li align=center><a style="font-weight:bold" href=index.html>HOME</a></li>
+		   <li align=center><a style="font-weight:bold" href=Main.html>MYSELF</a></li>
+		   <li align=center><a style="font-weight:bold" href=inst.html>FAVORITE GAMES</a></li>
+           <li align=center><a style="font-weight:bold" href=sport.html>FAVORITE SPORT</a></li>
+           <li align=center><a style="font-weight:bold" href=anime.html>FAVORITE ANIME</a></li>   		   
+       </ul> 
+   </div> 
+</div> 
+<div align="center" class="content-1">
+<h2> J Cole </h2>
+<h1> Jermaine Lamarr Cole (born January 28, 1985) is an American rapper, singer, songwriter, and record producer. He is regarded as one of the most influential rappers of his generation. Born on a military base in Germany and raised in Fayetteville, North Carolina, Cole initially gained recognition as a rapper following the release of his debut mixtape, The Come Up, in early 2007. Intent on further pursuing a musical career, he went on to release two additional mixtapes, The Warm Up (2009) and Friday Night Lights (2010) both to critical acclaim, after signing to Jay-Z's Roc Nation imprint in 2009. </h1>
+</div>
+<div align="center" class="content-2">
+<h2> Kendrick Lamar </h2>
+<h1> Kendrick Lamar Duckworth (born June 17, 1987) is an American rapper, songwriter, and record producer. He is often cited as one of the most influential rappers of his generation. Aside from his solo career, he is also a member of the hip hop supergroup Black Hippy alongside his former Top Dawg Entertainment (TDE) labelmates Ab-Soul, Jay Rock, and Schoolboy Q.</h1>
+</div>
+<div align="center" class="content-3">
+<h2> Kanye West </h2>
+<h1> Ye (/jeɪ/ YAY; born Kanye Omari West; June 8, 1977), commonly known as Kanye West[c] (/ˈkɑːnjeɪ/ KAHN-yay), is an American rapper, record producer, entrepreneur and fashion designer.[3][4][5][6] He is widely regarded as one of the greatest and most influential hip hop musicians of all time, as well as one of the greatest musicians of his generation. Born in Atlanta and raised in Chicago, West gained recognition as a producer for Roc-A-Fella Records in the early 2000s, producing singles for several artists and developing the "chipmunk soul" sampling style. Intent on pursuing a solo career as a rapper, he released his debut studio album, The College Dropout (2004), to critical and commercial success and subsequently founded the record label GOOD Music. </h1>
+</div>
+<div align="center" class="footer">
+<h2> Eminem </h2>
+<h1>Marshall Bruce Mathers III (born October 17, 1972), known professionally as Eminem (/ˌɛmɪˈnɛm/; formerly stylized as EMINƎM), is an American rapper, songwriter, and record producer. He is credited with popularizing hip hop in middle America and is critically acclaimed as one of the greatest rappers of all time.[2] Eminem's global success and acclaimed works are widely regarded as having broken racial barriers for the acceptance of white rappers in popular music. While much of his transgressive work during the late 1990s and early 2000s made him widely controversial, he came to be a representation of popular angst of the American underclass, and has been cited as an influence for many artists of various genres. </h1>
+</div>
+</div>
+</body> 
+</html>

@@ -1,0 +1,133 @@
+<html>
+<head> 
+	<style>
+
+*{
+	margin: 0px; 
+	padding: 0px; 
+	box-sizing: border-box;
+	background: black;
+}
+.nav ul{ 
+	list-style-type: none;
+}	
+.nav ul li{
+float:left;
+width:100px; 
+text-align:center; 
+margin-left:5px;
+}
+.nav ul li ul li{
+ margin-left: 0px;
+}
+.nav ul ul{ 
+display:none;
+}
+.nav ul li:hover > ul{
+display:block;
+}
+.nav ul li:hover{
+ background: blue;
+ color: blue; 
+ font-weight:bold;
+}
+.nav ul li ul li:hover{
+ background: blue; 
+ color: blue;
+ border-radius: 5px;
+}
+.container {
+  display: grid;
+  height: 300px;
+  grid-template-columns: 0.5fr 1fr 0.5fr;
+  grid-template-rows: 0.4fr 1fr 0.4fr;
+  grid-template-areas:  
+  "Header Header Header"
+  "S1 Main S2"
+  "Footer Footer Footer"
+
+}
+
+.header {
+  border-radius: 50px;
+    Background-color: black;
+    grid-area: Header;
+	align: center;
+}
+
+.content-1 {
+  border-radius: 50px;
+    Background-color: black;
+    grid-area: S1;
+}
+
+.content-2 {
+  border-radius: 50px;
+    background-color: black;
+    grid-area: Main;
+}
+
+.content-3 {
+  border-radius: 50px;
+    background-color: black;
+    grid-area: S2;
+}
+
+.footer {
+  border-radius: 50px;
+    background-color: black;
+    grid-area: Footer;
+}
+
+@media screen and (max-width: 600px) {
+
+.container {
+  display: grid; 
+  grid-template-columns: 2.2fr; 
+  grid-template-rows: 0.4fr 0.7fr 1fr 0.7fr 0.4fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "Header"
+    "S1"
+    "Main"
+    "S2"
+    "Footer"; 
+}
+
+</style>
+
+<title>PT4_SINAS</title>
+  </head>
+   <body> 
+<font color=blue face=arial>
+   <div class="container">
+<div align="center" class="header">
+  <div class=nav>
+<ul>
+           <li align=center><a style="font-weight:bold" href=index.html>HOME</a></li>
+           <li align=center><a style="font-weight:bold" href=Main.html>MYSELF</a></li> 
+           <li align=center><a style="font-weight:bold" href=songs.html>FAVORITE MUSICAL ARTISTS</a></li>
+           <li align=center><a style="font-weight:bold" href=sport.html>FAVORITE SPORT</a></li> 
+           <li align=center><a style="font-weight:bold" href=anime.html>FAVORITE Anime</a></li>  		   
+       </ul> 
+   </div> 
+</div> 
+<div align="center" class="content-1">
+<h2> Valorant </h2>
+<h1>  Valorant is a free-to-play first-person hero shooter developed and published by Riot Games, for Microsoft Windows. First teased under the codename Project A in October 2019, the game began a closed beta period with limited access on April 7, 2020, followed by an official release on June 2, 2020. The development of the game started in 2014. Valorant takes inspiration from the Counter-Strike series of tactical shooters, borrowing several mechanics such as the buy menu, spray patterns, and inaccuracy while moving. </h1>
+</div>
+<div align="center" class="content-2">
+<h2> Mobile Legends: Bang Bang </h2>
+<h1> Mobile Legends: Bang Bang or MLBB is a mobile multiplayer online battle arena (MOBA) game developed and published by Moonton, a subsidiary of ByteDance. Released in 2016, the game grew in popularity worldwide, most prominently in Southeast Asia, and has since crossed the 1 billion downloads feat, with peak monthly players of 100 million.[5][6] In 2021, Mobile Legends: Bang Bang achieved an all-time gross of US$1 billion with 44 percent of its revenue emanating from outside Asia, making it the top mobile game of its genre with the most global appeal</h1>
+</div>
+<div align="center" class="content-3">
+<h2> Clash of Clans </h2>
+<h1> Clash of Clans is a 2012 free-to-play mobile strategy video game developed and published by Finnish game developer Supercell. The game was released for IOS platforms on August 2, 2012, and on Google Play for Android on October 7, 2013.</h1>
+</div>
+<div align="center" class="footer">
+<h2> Pegaxy </h2>
+<h1> Pegaxy (PGX) Is A Free-To-Play Mech-Horse Racing Game Built On Blockchain. As A Play-To-Earn Metaverse The Allows Users To Create Real-World Value Through In-Game Activity. </h1>
+</div>
+</div>
+</body> 
+</html>

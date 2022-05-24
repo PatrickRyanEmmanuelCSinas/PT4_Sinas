@@ -1,0 +1,134 @@
+<html>
+<head> 
+	<style>
+
+*{
+	margin: 0px; 
+	padding: 0px; 
+	box-sizing: border-box;
+	background: black;
+}
+.nav ul{ 
+	list-style-type: none;
+}	
+.nav ul li{
+float:left;
+width:100px; 
+text-align:center; 
+margin-left:5px;
+}
+.nav ul li ul li{
+ margin-left: 0px;
+}
+.nav ul ul{ 
+display:none;
+}
+.nav ul li:hover > ul{
+display:block;
+}
+.nav ul li:hover{
+ background: blue;
+ color: blue; 
+ font-weight:bold;
+}
+.nav ul li ul li:hover{
+ background: blue; 
+ color: blue;
+ border-radius: 5px;
+}
+.container {
+  display: grid;
+  height: 300px;
+  grid-template-columns: 0.5fr 1fr 0.5fr;
+  grid-template-rows: 0.4fr 1fr 0.4fr;
+  grid-template-areas:  
+  "Header Header Header"
+  "S1 Main S2"
+  "Footer Footer Footer"
+
+}
+
+.header {
+  border-radius: 50px;
+    Background-color: black;
+    grid-area: Header;
+	align: center;
+}
+
+.content-1 {
+  border-radius: 50px;
+    Background-color: black;
+    grid-area: S1;
+}
+
+.content-2 {
+  border-radius: 50px;
+    background-color: black;
+    grid-area: Main;
+}
+
+.content-3 {
+  border-radius: 50px;
+    background-color: black;
+    grid-area: S2;
+}
+
+.footer {
+  border-radius: 50px;
+    background-color: black;
+    grid-area: Footer;
+}
+
+@media screen and (max-width: 600px) {
+
+.container {
+  display: grid; 
+  grid-template-columns: 2.2fr; 
+  grid-template-rows: 0.4fr 0.7fr 1fr 0.7fr 0.4fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "Header"
+    "S1"
+    "Main"
+    "S2"
+    "Footer"; 
+}
+
+</style>
+
+<title>PT4_SINAS</title>
+  </head>
+   <body> 
+<font color=blue face=arial>
+   <div class="container">
+<div align="center" class="header">
+  <div class=nav>
+<ul>
+           <li align=center><a style="font-weight:bold" href=index.html>HOME</a></li>
+		   <li align=center><a style="font-weight:bold" href=Main.html>MYSELF</a></li>
+		   <li align=center><a style="font-weight:bold" href=songs.html>FAVORITE MUSICAL ARTISTS</a></li>
+		   <li align=center><a style="font-weight:bold" href=inst.html>FAVORITE GAMES</a></li>
+		   <li align=center><a style="font-weight:bold" href=sport.html>FAVORITE SPORT</a></li>   		   
+       </ul> 
+   </div> 
+</div> 
+<div align="center" class="content-1">
+<h2> One Piece </h2>
+<h1> One Piece is a Japanese manga series written and illustrated by Eiichiro Oda.
+ It has been serialized in Shueisha’s shōnen manga magazine Weekly Shōnen Jump since July 1997, with its individual chapters compiled into 101 tankōbon volumes as of December 2021. The story follows the adventures of Monkey D. Luffy.</h1>
+</div>
+<div align="center" class="content-2">
+<h2> Attack On Titan </h2>
+<h1> Attack On Titan is a Japanese manga series written and illustrated by Hajime Isayama. It is set in a world where humanity is forced to live in cities surrounded by three enormous walls that protect them from gigantic man-eating humanoids referred to as Titans; the story follows Eren Yeager, who vows to exterminate the Titans after they bring about the destruction of his hometown and the death of his mother. Attack on Titan was serialized in Kodansha's monthly shōnen manga magazine Bessatsu Shōnen Magazine from September 2009 to April 2021, with its chapters collected in 34 tankōbon volumes.</h1>
+</div>
+<div align="center" class="content-3">
+<h2> Naruto </h2>
+<h1> Naruto is a Japanese manga series written and illustrated by Masashi Kishimoto. It tells the story of Naruto Uzumaki, a young ninja who seeks recognition from his peers and dreams of becoming the Hokage, the leader of his village. The story is told in two parts – the first set in Naruto's pre-teen years, and the second in his teens. The series is based on two one-shot manga by Kishimoto: Karakuri (1995), which earned Kishimoto an honorable mention in Shueisha's monthly Hop Step Award the following year, and Naruto (1997).</h1>
+</div>
+<div align="center" class="footer">
+<h2> Hunter x Hunter </h2>
+<h1>  Hunter x Hunter is a Japanese manga series written and illustrated by Yoshihiro Togashi. It has been serialized in Shueisha's shōnen manga magazine Weekly Shōnen Jump since March 1998, although the manga has frequently gone on extended hiatuses since 2006. Its chapters have been collected in 36 tankōbon volumes as of October 2018. The story focuses on a young boy named Gon Freecss who discovers that his father, who left him at a young age, is actually a world-renowned Hunter, a licensed professional who specializes in fantastical pursuits such as locating rare or unidentified animal species, treasure hunting, surveying unexplored enclaves, or hunting down lawless individuals. Gon departs on a journey to become a Hunter and eventually find his father. Along the way, Gon meets various other Hunters and encounters the paranormal. </h1>
+</div>
+</div>
+</body> 
+</html>
